@@ -1,0 +1,13 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  functions-call-count:
+    lang: node
+    handler: ./call-count
+    image: padiazg/functions-call-count
+    environment:
+      write_timeout: 10s
+      read_timeout: 10s
+      prometheus: http://10.22.1.80:9090
