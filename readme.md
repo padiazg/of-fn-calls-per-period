@@ -23,7 +23,10 @@ faas-cli build && faas-cli deploy
 ```
 
 ## Parameters:
-
+* **start**: Start day for the query (mandatory).
+* **end**: End day for the query (mandatory).
+* **step**: Period of time in wich the results are grouped.
+* **format**: Format of the output. Defaults to 'table', posible values are 'table' and 'json'.
 
 ## Examples
 Output as ascii-table.  
