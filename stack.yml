@@ -11,3 +11,4 @@ functions:
       write_timeout: 10s
       read_timeout: 10s
       prometheus: http://10.22.1.80:9090
+      timezone: America/Asuncion
