@@ -23,7 +23,7 @@ faas-cli build && faas-cli deploy
 ```
 
 ## Parameters:
-Parameters must be passed in JSON format:
+Parameters must be passed in JSON format:  
 Examples:  
 ```json
 {"start": "2018-03-30", "end": "2018-07-31"}
