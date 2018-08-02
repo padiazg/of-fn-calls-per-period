@@ -3,7 +3,7 @@ provider:
   gateway: http://127.0.0.1:8080
 
 functions:
-  of-fn-calls-per-period:
+  calls-per-period:
     lang: node
     handler: ./call-count
     image: padiazg/of-fn-calls-per-period
