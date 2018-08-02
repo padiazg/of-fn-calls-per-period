@@ -23,10 +23,21 @@ faas-cli build && faas-cli deploy
 ```
 
 ## Parameters:
+Parameters must be passed in JSON format:  
+Examples:  
+```json
+{"start": "2018-03-30", "end": "2018-07-31"}
+{"start": "2018-03-30", "end": "2018-07-31", "format": "json"}
+{"start": "2018-03-30", "end": "2018-07-31", "step": "3h", "format": "table"}
+```
+
 * **start**: Start day for the query (mandatory).
 * **end**: End day for the query (mandatory).
 * **step**: Period of time in wich the results are grouped.
-* **format**: Format of the output. Defaults to 'table', posible values are 'table' and 'json'.
+* **format**: Format of the output. Defaults to 'table'.  
+Posible values are: 
+  * table 
+  * json
 
 ## Examples
 Output as ascii-table.  
