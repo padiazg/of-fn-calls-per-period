@@ -8,7 +8,7 @@ After having been using this [this](https://github.com/padiazg/functions-calls-c
 
 1. Clone this repository
 ```bash
-$ git clone https://github.com/padiazg/functions-calls-count-af.git
+$ git clone https://github.com/padiazg/of-fn-calls-per-period.git
 ```
 2. Replace "padiazg/" prefix from Docker Hub in stack.yml with your own account
 
