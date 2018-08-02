@@ -3,12 +3,12 @@ provider:
   gateway: http://127.0.0.1:8080
 
 functions:
-  functions-call-count:
+  of-fn-calls-per-period:
     lang: node
     handler: ./call-count
-    image: padiazg/functions-call-count
+    image: padiazg/of-fn-calls-per-period
     environment:
       write_timeout: 10s
       read_timeout: 10s
       prometheus: http://10.22.1.80:9090
-      timezone: America/Asuncion
+      timezone: America/Asuncion	# here you sould put your timezone 
