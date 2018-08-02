@@ -1,4 +1,4 @@
-# OpenFaaS - Functions call count as a function
+# OpenFaaS - Functions call count per period
 
 After having been using this [this](https://github.com/padiazg/functions-calls-count-cli) CLI project for a while I thought, why not turn it into a function?
 
