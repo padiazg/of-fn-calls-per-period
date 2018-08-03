@@ -23,7 +23,7 @@ faas-cli build && faas-cli deploy
 ```
 
 ## Use directly from Docker Hub
-[]
+[of-fn-calls-per-period](https://hub.docker.com/r/padiazg/of-fn-calls-per-period/) 
 1. Create deploy.yml
 ```yml
 provider:
