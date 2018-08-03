@@ -4,7 +4,7 @@ After having been using this [this](https://github.com/padiazg/functions-calls-c
 
 > The structure of this project is based on [OpenFaaS with MongoDB] (https://github.com/alexellis/mongodb-function) from [@alexellisuk](https://twitter.com/alexellisuk)
 
-## Before you start
+## Build locally
 
 1. Clone this repository
 ```bash
@@ -20,6 +20,29 @@ $ faas-cli new call-count --lang node
 Now you can build/deploy
 ```bash
 faas-cli build && faas-cli deploy
+```
+
+## Use directly from Docker Hub
+[]
+1. Create deploy.yml
+```yml
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  calls-per-period:
+    image: padiazg/of-fn-calls-per-period
+    environment:
+      write_timeout: 10s
+      read_timeout: 10s
+      prometheus: http://your_prometheus_ip:9090
+      timezone: America/Asuncion        # here you sould put your timezone
+```
+2. Deploy with faas-cli
+Deploy your function using faas-cli
+```bash
+faas-cli deploy
 ```
 
 ## Parameters:
